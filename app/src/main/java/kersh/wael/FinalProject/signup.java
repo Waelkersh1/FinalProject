@@ -4,8 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 public class signup extends AppCompatActivity {
+    EditText etEmail, etPhone, etFirstName, etLastName, etPassword, etPassword2;
+    Button btnsave;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +24,7 @@ public class signup extends AppCompatActivity {
         etPassword2 = findViewById(R.id.etPassword2);
         etFirstName = findViewById(R.id.etFirstName);
         etLastName = findViewById(R.id.etLastName);
-        btnsave = findViewById(R.id.btnSave);
+        btnsave = findViewById(R.id.btnsave);
         btnsave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {//class without name
@@ -86,5 +93,4 @@ public class signup extends AppCompatActivity {
 
 
 
-}
 }
