@@ -5,12 +5,14 @@ import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
-public class adapter extends ArrayAdapter<MyTask>  {
+public class adapter extends ArrayAdapter<MyStep> {
 
 
      //target ; arrange data; source using; listview
@@ -24,7 +26,7 @@ public class adapter extends ArrayAdapter<MyTask>  {
          * @param resource XML  design of the item
          */
         //fix error
-        public MyTaskAdapte(@NonNull Context context, int resource) {
+        public adapter(@NonNull Context context, int resource) {
             super(context, resource);
         }
 
