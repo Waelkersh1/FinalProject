@@ -12,7 +12,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-public class adapter extends ArrayAdapter<MyStep> {
+public class adapter extends ArrayAdapter<Route
+
+
 
 
      //target ; arrange data; source using; listview
