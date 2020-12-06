@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".signup">
 
     <LinearLayout
@@ -16,14 +17,12 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/etEmail"
+            <TextView
+                android:id="@+id/textView2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="First Name"
-                android:inputType="textPersonName"
-                android:text="First Name" />
+                android:layout_height="101dp"
+                android:text="               Sign up "
+                android:textSize="36sp" />
 
             <EditText
                 android:id="@+id/etPhone"
@@ -65,11 +64,21 @@
                 android:inputType="textPersonName"
                 android:text="RePassword" />
 
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:text="First Name" />
+
             <Button
                 android:id="@+id/btnsave"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Save" />
+                android:text="Save"
+                android:textColor="#131313" />
 
         </LinearLayout>
     </LinearLayout>

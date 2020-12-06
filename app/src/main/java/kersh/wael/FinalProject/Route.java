@@ -4,12 +4,14 @@ import android.location.Location;
 
 import java.util.Date;
 
-public class Rote
+public class Route
 {
     private Location startLocation , endLocation ;
     private Date startDate , endDate ;
+    private String Type;//RUN WALK BICYCLE
+    private double  lenngth;
 
-    public Rote() {
+    public Route() {
     }
 
     public Location getStartLocation() {
