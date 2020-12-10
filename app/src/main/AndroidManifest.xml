@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RouteItem"></activity>
+        <activity android:name=".Cycling"></activity>
+        <activity android:name=".Run" />
+        <activity android:name=".Walk" />
+        <activity android:name=".RouteItem" />
         <activity android:name=".MainScreen" />
         <activity android:name=".signin" />
         <activity android:name=".signup" />
