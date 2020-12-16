@@ -19,4 +19,16 @@ public class MyStep
     public void setLat(double lat) {
         this.lat = lat;
     }
+
+    public int getCount() {
+        return count;
+    }
+
+    public double getLang() {
+        return lang;
+    }
+
+    public double getLat() {
+        return lat;
+    }
 }

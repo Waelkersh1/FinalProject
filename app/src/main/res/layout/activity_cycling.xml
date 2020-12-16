@@ -12,7 +12,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/EtText1"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:text="Cycling"
@@ -24,7 +24,7 @@
             android:layout_height="27dp" />
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/EtDistance24"
             android:layout_width="match_parent"
             android:layout_height="54dp"
             android:text="Distance(km)"
@@ -35,7 +35,7 @@
             android:layout_height="40dp" />
 
         <TextView
-            android:id="@+id/textView17"
+            android:id="@+id/EtCalore1"
             android:layout_width="match_parent"
             android:layout_height="79dp"
             android:text="Calories"
@@ -46,20 +46,20 @@
             android:layout_height="22dp" />
 
         <TextView
-            android:id="@+id/textView18"
+            android:id="@+id/EtTime3"
             android:layout_width="match_parent"
             android:layout_height="49dp"
             android:text="Time(h)"
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/button8"
+            android:id="@+id/BtnST"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Stop" />
 
         <Button
-            android:id="@+id/button9"
+            android:id="@+id/BtnRES"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Resume" />

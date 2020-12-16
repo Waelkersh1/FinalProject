@@ -39,4 +39,36 @@ public class signin extends AppCompatActivity {
     //5
     private void validateForm() {
     }
+
+    public EditText getEtemail() {
+        return etemail;
+    }
+
+    public void setEtemail(EditText etemail) {
+        this.etemail = etemail;
+    }
+
+    public EditText getEtpassword() {
+        return etpassword;
+    }
+
+    public void setEtpassword(EditText etpassword) {
+        this.etpassword = etpassword;
+    }
+
+    public Button getBtnlog() {
+        return btnlog;
+    }
+
+    public void setBtnlog(Button btnlog) {
+        this.btnlog = btnlog;
+    }
+
+    public Button getBtnSignup() {
+        return btnSignup;
+    }
+
+    public void setBtnSignup(Button btnSignup) {
+        this.btnSignup = btnSignup;
+    }
 }

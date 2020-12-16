@@ -43,4 +43,32 @@ public class Walk<EtStep> extends AppCompatActivity {
     public void setBtnRes(Button btnRes) {
         BtnRes = btnRes;
     }
+
+    public EditText getEtDistance() {
+        return EtDistance;
+    }
+
+    public EditText getEtStep() {
+        return EtStep;
+    }
+
+    public EditText getEtCal() {
+        return EtCal;
+    }
+
+    public EditText getEtTime() {
+        return EtTime;
+    }
+
+    public EditText getWalk() {
+        return Walk;
+    }
+
+    public Button getBtnStop() {
+        return BtnStop;
+    }
+
+    public Button getBtnRes() {
+        return BtnRes;
+    }
 }

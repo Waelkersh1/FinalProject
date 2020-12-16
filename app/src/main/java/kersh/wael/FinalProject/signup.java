@@ -91,6 +91,59 @@ public class signup extends AppCompatActivity {
         FirebaseAuth auth = FirebaseAuth.getInstance(); // אחראית על רישום וכניסת משתמשים
     }
 
+    public EditText getEtEmail() {
+        return etEmail;
+    }
 
+    public void setEtEmail(EditText etEmail) {
+        this.etEmail = etEmail;
+    }
 
+    public EditText getEtPhone() {
+        return etPhone;
+    }
+
+    public void setEtPhone(EditText etPhone) {
+        this.etPhone = etPhone;
+    }
+
+    public EditText getEtFirstName() {
+        return etFirstName;
+    }
+
+    public void setEtFirstName(EditText etFirstName) {
+        this.etFirstName = etFirstName;
+    }
+
+    public EditText getEtLastName() {
+        return etLastName;
+    }
+
+    public void setEtLastName(EditText etLastName) {
+        this.etLastName = etLastName;
+    }
+
+    public EditText getEtPassword() {
+        return etPassword;
+    }
+
+    public void setEtPassword(EditText etPassword) {
+        this.etPassword = etPassword;
+    }
+
+    public EditText getEtPassword2() {
+        return etPassword2;
+    }
+
+    public void setEtPassword2(EditText etPassword2) {
+        this.etPassword2 = etPassword2;
+    }
+
+    public Button getBtnsave() {
+        return btnsave;
+    }
+
+    public void setBtnsave(Button btnsave) {
+        this.btnsave = btnsave;
+    }
 }
