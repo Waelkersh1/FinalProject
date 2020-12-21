@@ -15,15 +15,17 @@
         <activity android:name=".Walk" />
         <activity android:name=".RouteItem" />
         <activity android:name=".MainScreen" />
-        <activity android:name=".signin" />
-        <activity android:name=".signup" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".signin" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".signup" />
+
+
+
     </application>
 
 </manifest>

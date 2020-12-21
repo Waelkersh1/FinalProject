@@ -2,10 +2,13 @@ package kersh.wael.FinalProject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 public class signin extends AppCompatActivity {
     private EditText etemail, etpassword;
@@ -20,6 +23,10 @@ public class signin extends AppCompatActivity {
         etpassword = findViewById(R.id.etPassword);
         btnlog = findViewById(R.id.btnlog);
         btnSignup = findViewById(R.id.btnsign);
+        FirebaseAuth auth =FirebaseAuth.getInstance();
+        if(auth.getCurrentUser()!=null){
+            startActivity(new Intent(getApplicationContext(),MainScreen.class));
+        }
         //4
         btnlog.setOnClickListener(new View.OnClickListener() {
             @Override
