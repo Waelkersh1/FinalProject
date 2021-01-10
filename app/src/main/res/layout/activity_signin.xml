@@ -28,8 +28,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textEmailAddress"
-            tools:text="Enter your Email" />
+            android:hint="Enter your Email"
+            android:inputType="textEmailAddress" />
 
         <Space
             android:layout_width="match_parent"
@@ -40,8 +40,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Enter your Password"
             android:inputType="textPersonName"
-            android:text="Enter your Password" />
+            tools:visibility="visible" />
 
         <Space
             android:layout_width="match_parent"
@@ -58,7 +59,7 @@
             android:layout_height="50dp" />
 
         <Button
-            android:id="@+id/btnsign"
+            android:id="@+id/btnsignUP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Sign Up" />

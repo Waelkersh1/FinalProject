@@ -18,11 +18,10 @@ public class signin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
-        setContentView(R.layout.activity_signup);
         etemail = findViewById(R.id.etEmail);
         etpassword = findViewById(R.id.etPassword);
         btnlog = findViewById(R.id.btnlog);
-        btnSignup = findViewById(R.id.btnsign);
+        btnSignup = findViewById(R.id.btnsignUP);
         FirebaseAuth auth =FirebaseAuth.getInstance();
         if(auth.getCurrentUser()!=null){
             startActivity(new Intent(getApplicationContext(),MainScreen.class));
