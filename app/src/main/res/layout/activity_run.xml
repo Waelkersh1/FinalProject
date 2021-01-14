@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/return"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Run">
@@ -10,6 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btnReturn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_revert" />
 
         <TextView
             android:id="@+id/EtRun"
@@ -52,18 +59,51 @@
             android:text="time(h)"
             android:textSize="24sp" />
 
-        <Button
-            android:id="@+id/BtnS"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Stop"
-            android:textSize="18sp" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/BtnRE"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="resume"
-            android:textSize="18sp" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/BtnS"
+                    android:layout_width="130dp"
+                    android:layout_height="45dp"
+                    android:text="Stop"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="141dp"
+                    tools:layout_editor_absoluteY="9dp" />
+
+                <Button
+                    android:id="@+id/BtnRE"
+                    android:layout_width="137dp"
+                    android:layout_height="47dp"
+                    android:text="resume"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="275dp"
+                    tools:layout_editor_absoluteY="7dp" />
+
+                <Button
+                    android:id="@+id/btnSAVE"
+                    android:layout_width="202dp"
+                    android:layout_height="57dp"
+                    android:text="Save"
+                    tools:layout_editor_absoluteX="108dp"
+                    tools:layout_editor_absoluteY="54dp" />
+
+                <Button
+                    android:id="@+id/btnSTART"
+                    android:layout_width="131dp"
+                    android:layout_height="45dp"
+                    android:text="Start"
+                    tools:layout_editor_absoluteX="5dp"
+                    tools:layout_editor_absoluteY="9dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

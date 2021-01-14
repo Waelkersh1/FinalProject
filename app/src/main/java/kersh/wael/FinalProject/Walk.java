@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 public class Walk<EtStep> extends AppCompatActivity {
 
@@ -14,7 +15,8 @@ public class Walk<EtStep> extends AppCompatActivity {
         setContentView(R.layout.activity_walk);
     }
     private EditText EtDistance ,EtStep , EtCal, EtTime , Walk;
-    private Button BtnStop, BtnRes;
+    private Button BtnStop, BtnRes, btnSave,;
+    private ImageButton btnRE;
 
     public void setEtDistance(EditText etDistance) {
         EtDistance = etDistance;
@@ -70,5 +72,21 @@ public class Walk<EtStep> extends AppCompatActivity {
 
     public Button getBtnRes() {
         return BtnRes;
+    }
+
+    public ImageButton getBtnRE() {
+        return btnRE;
+    }
+
+    public void setBtnRE(ImageButton btnRE) {
+        this.btnRE = btnRE;
+    }
+
+    public Button getBtnSave() {
+        return btnSave;
+    }
+
+    public void setBtnSave(Button btnSave) {
+        this.btnSave = btnSave;
     }
 }

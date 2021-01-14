@@ -2,9 +2,12 @@ package kersh.wael.FinalProject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 public class Cycling extends AppCompatActivity {
 
@@ -13,8 +16,10 @@ public class Cycling extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cycling);
     }
+
     private EditText EtText1,EtDistance24,EtCalore1,EtTime3;
-    private Button BtnRES,BtnST;
+    private Button BtnRES,BtnST,btnStart,btnSave;
+    private ImageButton btnREturn ;
 
     public EditText getEtText1() {
         return EtText1;
@@ -63,4 +68,29 @@ public class Cycling extends AppCompatActivity {
     public void setBtnST(Button btnST) {
         BtnST = btnST;
     }
+
+    public ImageButton getBtnREturn() {
+        return btnREturn;
+    }
+
+    public void setBtnREturn(ImageButton btnREturn) {
+        this.btnREturn = btnREturn;
+    }
+
+    public Button getBtnStart() {
+        return btnStart;
+    }
+
+    public void setBtnStart(Button btnStart) {
+        this.btnStart = btnStart;
+    }
+
+    public Button getBtnSave() {
+        return btnSave;
+    }
+
+    public void setBtnSave(Button btnSave) {
+        this.btnSave = btnSave;
+    }
+
 }
