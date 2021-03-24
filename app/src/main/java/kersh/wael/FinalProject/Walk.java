@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
-public class Walk<EtStep> extends AppCompatActivity {
+public class  Walk<EtStep> extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

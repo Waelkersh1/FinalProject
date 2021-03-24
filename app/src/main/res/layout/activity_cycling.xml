@@ -7,15 +7,32 @@
     tools:context=".Cycling">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
             android:id="@+id/btnREturn"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             app:srcCompat="@android:drawable/ic_menu_revert" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="27dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp" />
 
         <TextView
             android:id="@+id/EtText1"
@@ -25,21 +42,6 @@
             android:textAlignment="center"
             android:textSize="30sp" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="27dp" />
-
-        <TextView
-            android:id="@+id/EtDistance24"
-            android:layout_width="match_parent"
-            android:layout_height="54dp"
-            android:text="Distance(km)"
-            android:textSize="18sp" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="40dp" />
-
         <TextView
             android:id="@+id/EtCalore1"
             android:layout_width="match_parent"
@@ -47,9 +49,12 @@
             android:text="Calories"
             android:textSize="18sp" />
 
-        <Space
+        <TextView
+            android:id="@+id/EtDistance24"
             android:layout_width="match_parent"
-            android:layout_height="22dp" />
+            android:layout_height="54dp"
+            android:text="Distance(km)"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/EtTime3"

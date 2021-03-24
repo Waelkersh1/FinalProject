@@ -7,7 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class signup extends AppCompatActivity {
     EditText etEmail, etPhone, etFirstName, etLastName, etPassword, etPassword2;
@@ -29,8 +32,12 @@ public class signup extends AppCompatActivity {
             @Override
             public void onClick(View v) {//class without name
                 checkForm();
-
-            }
+                btnsave.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        checkForm();
+                    }
+                });            }
         });
     }
 
@@ -77,7 +84,39 @@ public class signup extends AppCompatActivity {
             createNewAccount(Email, FirstName, LastName, password, PhoneNumber);
         }
 
+
     }
+
+    private void saveTask(MyValidations myTask) {
+        //1.
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        //2.
+        DatabaseReference reference = database.getReference();
+        //3. user id
+        FirebaseAuth auth = FirebaseAuth.getInstance();
+        String uid = auth.getCurrentUser().getUid();
+        //4. My Object Key
+        String key = reference.child("AllTasks").push().getKey();
+        //5. Update Your Object
+        myTask.setOwner(uid);
+        myTask.setKey(key);
+        //6. Actual Stroring
+        reference.child("AllTasks").child(uid).child(key).setValue(myTask).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                if (task.isSuccessful()){
+                    Toast.makeText(getApplicationContext(),"add successful",Toast.LENGTH_SHORT).show();
+                    finish();
+                }
+                else{
+                    Toast.makeText(AddMedicineActivity.this,"add successful"+task.getException().getMessage(),Toast.LENGTH_SHORT).show();
+                    task.getException().printStackTrace();
+                }
+            }
+        });
+
+    }
+}
 
     /**
      * @param gmail
